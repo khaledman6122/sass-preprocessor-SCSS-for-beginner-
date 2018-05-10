@@ -1,0 +1,105 @@
+//mixin should be before anything you give it a mixin
+
+
+@mixin mix1{
+    margin:0;   padding:0; 
+    border: 2px solid #000000;
+    a{
+        text-decoration: none;
+        padding: 10px;
+        background-color:#631eff;
+        color:#000000;
+    }
+    a#special{ //for an anchor<a> with an  id="special"  
+        text-decoration: none;
+        padding: 20px;
+        background-color:#ff1ec2;
+        color:#ff0000;
+    }
+    
+    a>img {
+        width:200px;    height: auto;
+        border-radius: 50%;
+    }
+    a>span{
+        font-family: cursive;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    p{
+        text-align: center;
+        font-family: sans-serif;
+        color: darkblue;
+        font-size: 12px;
+    }
+    p>span{
+        font-size: 15px;
+        font-weight: bolder;
+
+    }
+    
+}
+
+
+
+//assign a mixin to what you want.... @include mixinName;
+.kid{
+    @include mix1;
+}
+.motive{
+    @include mix1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin mix2{
+     
+         width: 800px;
+        height: auto;
+        border:2px solid green;
+        margin:20px;
+        font-family: monospace;
+     
+        th{font-weight: bold; font-size: 18px; background-color: #ffffff; border:2px solid red;}
+        
+        tr{font-weight: 100; font-size: 13px; /*border cant apply for"tr"but it's allowed for td*/
+             td{border:2px solid aqua;}
+        }
+       
+        tr:nth-child(even){background-color: #d8d8d8;}
+        tr:nth-child(odd){background-color: #585858;}    
+}
+
+
+
+
+.T1,.T2{
+@include mix2;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

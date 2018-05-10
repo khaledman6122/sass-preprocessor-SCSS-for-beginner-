@@ -1,0 +1,52 @@
+.kid, .motive {
+  margin: 0;
+  padding: 0;
+  border: 2px solid #000000; }
+  .kid a, .motive a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #631eff;
+    color: #000000; }
+  .kid a#special, .motive a#special {
+    text-decoration: none;
+    padding: 20px;
+    background-color: #ff1ec2;
+    color: #ff0000; }
+  .kid a > img, .motive a > img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%; }
+  .kid a > span, .motive a > span {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 15px; }
+  .kid p, .motive p {
+    text-align: center;
+    font-family: sans-serif;
+    color: darkblue;
+    font-size: 12px; }
+  .kid p > span, .motive p > span {
+    font-size: 15px;
+    font-weight: bolder; }
+
+.T1, .T2 {
+  width: 800px;
+  height: auto;
+  border: 2px solid green;
+  margin: 20px;
+  font-family: monospace; }
+  .T1 th, .T2 th {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #ffffff;
+    border: 2px solid red; }
+  .T1 tr, .T2 tr {
+    font-weight: 100;
+    font-size: 13px;
+    /*border cant apply for"tr"but it's allowed for td*/ }
+    .T1 tr td, .T2 tr td {
+      border: 2px solid aqua; }
+  .T1 tr:nth-child(even), .T2 tr:nth-child(even) {
+    background-color: #d8d8d8; }
+  .T1 tr:nth-child(odd), .T2 tr:nth-child(odd) {
+    background-color: #585858; }

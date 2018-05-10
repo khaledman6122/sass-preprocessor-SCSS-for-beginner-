@@ -1,0 +1,48 @@
+/*
+math operations in SASS
+1- any math operation must be within () ..one Unit type to use inside the brackets
+2- px in sass is px in css...also % in sass is % in css
+3- ie: 
+    width:(100% / 3)..true..in CSS = 33.3333 %
+    width: 100% / 3 ..wrong
+    padding: (50px + 3)..true..in CSS = 53 px
+    padding:50px+3.. wrong
+    height:(100%-20px);  ..wrong  
+    width:( (600% / 4) - 20px)....wrong
+*/
+.main_nav {
+  width: 600px;
+  height: auto; }
+
+.main_nav ul li {
+  display: inline-block;
+  width: 130px; }
+
+.main_nav ul li a {
+  float: left;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #ccc;
+  color: #ffffff; }
+  .main_nav ul li a:hover {
+    background-color: #ffffff;
+    color: #ccc; }
+
+.main_nav2 {
+  width: 300px;
+  height: auto; }
+  .main_nav2 img {
+    width: 33.33333%;
+    height: auto; }
+
+.main_nav3 {
+  width: 600px;
+  height: 80px;
+  display: inline-block; }
+  .main_nav3 .sub {
+    width: 33.33333%;
+    height: 80%;
+    background-color: #ccc;
+    float: left; }

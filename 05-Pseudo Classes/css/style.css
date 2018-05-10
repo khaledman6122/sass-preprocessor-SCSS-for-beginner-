@@ -1,0 +1,16 @@
+.main_nav ul li a {
+  color: #ffffff;
+  background-color: darkred; }
+  .main_nav ul li a:hover {
+    color: darkred;
+    background-color: #ffffff; }
+  .main_nav ul li a:active {
+    color: blue;
+    background-color: #000000; }
+
+.main_nav2 a {
+  color: #000000;
+  background-color: deeppink; }
+  .main_nav2 a:hover {
+    background-color: #00ff3b;
+    color: #000000; }

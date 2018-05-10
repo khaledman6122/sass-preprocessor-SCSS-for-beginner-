@@ -1,0 +1,67 @@
+/*
+variables in sass is very simple and have the same logic of programming variables
+ie:C++  int x=5; int helloworld=x;
+but in sass
+if we want to make all of our <a> the same and our color is #458710
+by using css we gonna iterate all over <a> and change each of them seprately  and we will forget the color code ..so SASS will make it easy ..how??
+sass: 
+$linkcolor:#458710;
+
+.className a{
+color:$linkcolor;
+}
+    a name you made and will never forget is better than a borring  hex code     
+*/
+/*
+nesting:
+
+<div class="main_nav">
+<ul>
+<li><a href="#></a></li>
+<li><a href="#></a></li>
+<li><a href="#></a></li>
+</ul>
+</div>
+
+in CSS if we want to style the previous code we will going throw the following lines and modify each one of them
+.main_nav{.....}
+.main_nav ul{.....}
+.main_nav ul li{.....}
+.main_nav ul li a{.....}
+
+
+but in SASS it will be :
+.main_nav{  ul{...  li{... a{ } } } }
+OR
+.main_nav{
+    ul{
+       li{
+            a{   }
+        }
+    
+    }
+    }
+*/
+body {
+  background-color: pink;
+  max-width: 1500px;
+  height: auto; }
+
+.main_nav {
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .main_nav ul {
+    width: 100%; }
+    .main_nav ul li {
+      width: 20%;
+      display: inline-block;
+      float: left;
+      border: 5px dotted green; }
+  .main_nav li a {
+    display: block;
+    text-decoration: none;
+    font-family: "Helvetica", "sans-serif";
+    color: #f8f9fb;
+    background-color: black;
+    padding: 10px; }

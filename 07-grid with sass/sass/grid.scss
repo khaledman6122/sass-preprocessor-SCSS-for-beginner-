@@ -1,0 +1,55 @@
+
+body{
+    margin:0; 
+    padding: 0;
+}
+
+@mixin gtemp($wth,$cols,$rowHeight,$gap,$bckgrnd){
+    display:grid;
+    width:$wth;
+    grid-template-columns: repeat($cols,1fr);
+    grid-auto-rows: minmax($rowHeight,auto);
+    grid-row-gap: $gap;
+    grid-column-gap:$gap;
+    margin:auto;
+    margin-bottom: 200px;
+    div{
+        img{ width: 50%;    height: auto;}
+         background-color: $bckgrnd;
+    }
+    
+    
+}
+.wrapper{
+    @include gtemp(600px,4,10%,10px,#e38686); /*if we have math operation into the general mixin this line would be an error because the whole line should be in % OR px*/
+}
+
+
+.wrapper2{
+@include gtemp(800px,2,10%,20px,#93ffcd); /*if we have math operation into the general mixin this line would be an error because the whole line should be in % OR px*/
+}
+
+
+.wrapper3{
+    @include gtemp(800px,4,150px,20px,#965eff); /*if we have math operation into the general mixin this line would be an error because the whole line should be in % OR px*/
+     grid-template-areas: 
+         "one  one one two"
+        "three four four two "
+        "three four four two "
+        "three five five five "
+        ;
+    transform: rotate(47deg) scale(0.7);
+    
+}
+    .wrapper3 .one{grid-area: one;}
+    .wrapper3 .two{grid-area: two;}
+    .wrapper3 .three{grid-area: three;}
+    .wrapper3 .four{grid-area: four;}
+    .wrapper3 .five{grid-area: five;}
+    .wrapper3 .six{grid-area: six;}
+
+
+
+
+
+

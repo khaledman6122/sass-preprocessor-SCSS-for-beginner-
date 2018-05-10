@@ -1,0 +1,28 @@
+//first disable the autocompile from all oter scss files except the this/current file
+//Important note : try to consider the piriority of the file that you will going to add first ...ie: if we have variables located in f1 and  a mixin located in f2 but the mixin depends/USE the variables in f1 so we have to import f1 the f2
+
+
+
+
+// "tables" uses/dependsOn "mixin" so we have to import "mixin" first
+//this is how to import a file
+@import "mixin";
+@import "tables";
+
+
+
+
+//include a mixin to some classes
+.kid,.motive{
+    @include mix1;
+}
+ 
+
+.T1,.T2{
+@include mix2;
+    }
+
+
+
+
+
